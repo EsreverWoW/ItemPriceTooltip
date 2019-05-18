@@ -1,0 +1,7 @@
+## Interface: 11302
+## Title: ItemPriceTooltip
+## Notes: Adds item sell price to tooltips in WoW Classic.
+## Author: Es (EsreverWoW)
+## Version: 1.0
+
+ItemPriceTooltip.lua
