@@ -4,6 +4,7 @@
 ## Author: Es (EsreverWoW)
 ## X-Website: https://github.com/EsreverWoW/ItemPriceTooltip
 ## X-Curse-Project-ID: 335566
-## Version: 1.0
+## X-WoWI-ID: 25139
+## Version: 1.01
 
 ItemPriceTooltip.lua
