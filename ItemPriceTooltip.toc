@@ -2,9 +2,11 @@
 ## Title: ItemPriceTooltip
 ## Notes: Adds item sell price to tooltips in WoW Classic.
 ## Author: Es (EsreverWoW)
-## X-Website: https://github.com/EsreverWoW/ItemPriceTooltip
 ## X-Curse-Project-ID: 335566
 ## X-WoWI-ID: 25139
 ## Version: 1.01
+
+## X-License: MIT
+## X-Website: https://github.com/EsreverWoW/ItemPriceTooltip
 
 ItemPriceTooltip.lua
