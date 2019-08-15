@@ -160,7 +160,7 @@ local function ApplyHooks(tooltip)
 	hooksecurefunc(tooltip, "SetBagItem", SetBagItem)
 	hooksecurefunc(tooltip, "SetCraftItem", SetCraftItem)
 	hooksecurefunc(tooltip, "SetHyperlink", SetHyperlink)
-	hooksecurefunc(tooltip, "SetInboxItem", SetInboxItem)
+	-- hooksecurefunc(tooltip, "SetInboxItem", SetInboxItem) -- Disable inbox for now, as it was causing issues.
 	hooksecurefunc(tooltip, "SetInventoryItem", SetInventoryItem)
 	hooksecurefunc(tooltip, "SetLootItem", SetLootItem)
 	hooksecurefunc(tooltip, "SetLootRollItem", SetLootRollItem)
