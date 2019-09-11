@@ -3,11 +3,14 @@ local function FormatCurrency(amount)
 	local silver = mod(floor(math.abs(amount) / 100), 100)
 	local copper = mod(floor(math.abs(amount)), 100)
 	if gold ~= 0 then
-		return format("%s".."|cffffd700"..GOLD_AMOUNT_SYMBOL.."|r".." %s".."|cffc7c7cfs|r".." %s".."|cffeda55fc|r", gold, silver, copper)
+		return GOLD_AMOUNT_TEXTURE:format(gold, 0, 0).."|r  |r"..SILVER_AMOUNT_TEXTURE:format(silver, 0, 0).."|r  |r"..COPPER_AMOUNT_TEXTURE:format(copper, 0, 0)
+		--format("%s".."|cffffd700"..GOLD_AMOUNT_SYMBOL.."|r".." %s".."|cffc7c7cf"..SILVER_AMOUNT_SYMBOL.."|r".." %s".."|cffeda55f"..COPPER_AMOUNT_SYMBOL.."|r", gold, silver, copper)
 	elseif silver ~= 0 then
-		return format("%s".."|cffc7c7cf"..SILVER_AMOUNT_SYMBOL.."|r".." %s".."|cffeda55fc|r", silver, copper)
+		return SILVER_AMOUNT_TEXTURE:format(silver, 0, 0).."|r  |r"..COPPER_AMOUNT_TEXTURE:format(copper, 0, 0)
+		--format("%s".."|cffc7c7cf"..SILVER_AMOUNT_SYMBOL.."|r".." %s".."|cffeda55f"..COPPER_AMOUNT_SYMBOL.."|r", silver, copper)
 	else
-		return format("%s".."|cffeda55f"..COPPER_AMOUNT_SYMBOL.."|r", copper)
+		return COPPER_AMOUNT_TEXTURE:format(copper, 0, 0)
+		--format("%s".."|cffeda55f"..COPPER_AMOUNT_SYMBOL.."|r", copper)
 	end
 end
 
